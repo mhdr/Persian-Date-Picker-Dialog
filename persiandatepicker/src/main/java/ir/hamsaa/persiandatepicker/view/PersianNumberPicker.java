@@ -17,14 +17,17 @@ public class PersianNumberPicker extends NumberPicker {
 
     public PersianNumberPicker(Context context) {
         super(context);
+        this.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
     }
 
     public PersianNumberPicker(Context context, AttributeSet attrs) {
         super(context, attrs);
+        this.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
     }
 
     public PersianNumberPicker(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        this.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
     }
 
     @Override
