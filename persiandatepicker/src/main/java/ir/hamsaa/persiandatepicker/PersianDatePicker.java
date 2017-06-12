@@ -92,7 +92,7 @@ class PersianDatePicker extends LinearLayout {
 
 
 
-        yearNumberPicker.setFormatter(new NumberPicker.Formatter() {
+/*        yearNumberPicker.setFormatter(new NumberPicker.Formatter() {
             @Override
             public String format(int i) {
                 return PersianHelper.toPersianNumber(i + "");
@@ -111,7 +111,7 @@ class PersianDatePicker extends LinearLayout {
             public String format(int i) {
                 return PersianHelper.toPersianNumber(i + "");
             }
-        });
+        });*/
 
         // init calendar
         pCalendar = new PersianCalendar();
