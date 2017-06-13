@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 .setTodayButton("امروز")
                 .setTodayButtonVisible(true)
                 .setInitDate(initDate)
-                .setMaxYear(1395)
+                .setMaxYear(1450)
                 .setMinYear(1300)
                 .setActionTextColor(Color.GRAY)
                 .setTypeFace(typeface)
