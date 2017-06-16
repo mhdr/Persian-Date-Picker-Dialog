@@ -125,6 +125,9 @@ public class PersianDatePickerDialog {
         final AppCompatButton negativeButton = (AppCompatButton) v.findViewById(R.id.negative_button);
         final AppCompatButton todayButton = (AppCompatButton) v.findViewById(R.id.today_button);
 
+        if (initDate != null) {
+            datePicker.setDisplayPersianDate(initDate);
+        }
 
         if (maxYear > 0) {
             datePicker.setMaxYear(maxYear);
@@ -132,10 +135,6 @@ public class PersianDatePickerDialog {
 
         if (minYear > 0) {
             datePicker.setMinYear(minYear);
-        }
-
-        if (initDate != null) {
-            datePicker.setDisplayPersianDate(initDate);
         }
 
         if (typeFace != null) {

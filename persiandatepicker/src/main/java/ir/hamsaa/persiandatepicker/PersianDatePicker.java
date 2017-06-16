@@ -178,15 +178,14 @@ class PersianDatePicker extends LinearLayout {
             setDividerColor(dayNumberPicker, dividerColor);
         }
 
-        yearNumberPicker.setMinValue(minYear);
-        yearNumberPicker.setMaxValue(maxYear);
-
-
         if (selectedYear > maxYear || selectedYear < minYear) {
             throw new IllegalArgumentException(String.format("Selected year (%d) must be between minYear(%d) and maxYear(%d)", selectedYear, minYear, maxYear));
         }
         yearNumberPicker.setValue(selectedYear);
         yearNumberPicker.setOnValueChangedListener(dateChangeListener);
+
+        yearNumberPicker.setMinValue(minYear);
+        yearNumberPicker.setMaxValue(maxYear);
 
 		/*
          * initializng monthNumberPicker
